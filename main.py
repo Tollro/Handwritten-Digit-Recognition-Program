@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from tensorflow import keras
 from keras import layers
 from PIL import Image
-
+'''
 # 1. 加载MNIST数据集
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
 
@@ -46,7 +46,7 @@ print(f"Test accuracy: {score[1]:.4f}")
 
 # 6. 保存模型
 model.save('mnist_cnn.h5')
-
+'''
 # 7. 使用自定义图像进行预测
 def predict_digit(img_path):
     # 加载模型
@@ -68,5 +68,5 @@ def predict_digit(img_path):
     return digit, confidence
 
 # 使用示例
-digit, confidence = predict_digit('my_digit.png')
+digit, confidence = predict_digit('test4_1.png')
 print(f"Predicted digit: {digit} with {confidence*100:.2f}% confidence")
